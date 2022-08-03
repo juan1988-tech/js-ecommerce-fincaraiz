@@ -186,3 +186,24 @@ body{
   border: 1px solid var(--light-purple-font);
   color: var(--light-purple-font);
 }
+
+/*ultimas propiedades*/
+.last-properties-container .salesStateContainer{
+  background: var(--dark-purple);
+  display: inline-flex;
+  width: 11.2rem;
+  height: 2rem;
+  border-radius: 1rem;
+  display: grid;
+  place-items: center;
+}
+
+.last-properties-container .p-salesSate{
+  color: var(--white);
+  font-weight: 700;
+}
+
+.last-properties-container .principal-home-image{
+  width: 98.5%;
+  height: 19.3rem;
+}
