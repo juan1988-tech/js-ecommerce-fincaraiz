@@ -1,5 +1,38 @@
+const Data = [
+  { 
+    urlImage: 'url(./assets/homes/casa-1-1.jpg)',
+    stateHomeText: 'En Arrendamiento',
+    HomeTitleText:  'Elíxires del rincón',
+    HomeSubTitleText: 'Suba, Bogotá',
+    PropertyNamePText:'Sky Apartments de la Holla',
+    PropertyBedroomsPText: "3 habitaciones",
+    PropertyMeasurePText: "76 m2",
+    PropertyBathroomsPText: "3 baños"
+  },
+  {
+    urlImage: 'url(./assets/homes/casa-2-1.jpg)',
+    stateHomeText: 'En Venta',
+    HomeTitleText:  ' Cañiza de la olla',
+    HomeSubTitleText: 'Centro, Bogotá',
+    PropertyNamePText:'Cerros de la palma',
+    PropertyBedroomsPText: "2 habitaciones",
+    PropertyMeasurePText: "120 m2",
+    PropertyBathroomsPText: "3 baños"
+  },
+  {
+    urlImage: 'url(./assets/homes/casa-3-1.jpg)',
+    stateHomeText: 'En Arrendamiento',
+    HomeTitleText:  'Altos del sumapáz',
+    HomeSubTitleText: 'Alamos, Bogotá',
+    PropertyNamePText:'El rincón de la patraña',
+    PropertyBedroomsPText: "2 habitaciones",
+    PropertyMeasurePText: "300 m2",
+    PropertyBathroomsPText: "2 baños"
+  },
+];
+
+const lastPropertiesContainer = document.querySelector('#last-properties-container');
 function Home(urlImage,stateHomeText,HomeTitleText,HomeSubTitleText,PropertyNamePText,PropertyBedroomsPText, PropertyMeasurePText, PropertyBathroomsPText){
-  const lastPropertiesContainer = document.querySelector('#last-properties-container');
   const newHome = document.createElement('article'); 
   newHome.className = 'last-property';
   lastPropertiesContainer.appendChild(newHome);
@@ -19,7 +52,7 @@ function Home(urlImage,stateHomeText,HomeTitleText,HomeSubTitleText,PropertyName
   pointsNavbarHome.className = 'points-nabvar-home';
   const pointsItems = [];
   for(let i=0;i<3;i++){
-    const pointNavbar =  document.createElement('span');11
+    const pointNavbar =  document.createElement('span');
     pointNavbar.className = 'point-nabvar-home';
   pointsItems.push(pointNavbar); 
   }
@@ -74,8 +107,18 @@ function Home(urlImage,stateHomeText,HomeTitleText,HomeSubTitleText,PropertyName
   newHome.append(nabvarHomePhoto,HomeTitle,HomeSubtitle,LastPropertyDescription,ButtonActionCellPhone);
 }
 
-Home('url(./assets/homes/casa-1-1.jpg)','En Arrendamiento','Elíxires del rincón','Suba, Bogotá','Sky Apartments de la Holla',"3 habitaciones","76 m2","3 baños");
 
-
+for(let i=0;i<=3;i++){
+  Home(
+    Data[i].urlImage,
+    Data[i].stateHomeText,
+    Data[i].HomeTitleText,
+    Data[i].HomeSubTitleText,
+    Data[i].PropertyNamePText,
+    Data[i].PropertyBedroomsPText, 
+    Data[i].PropertyMeasurePText, 
+    Data[i].PropertyBathroomsPText
+  )
+}
 
 

@@ -48,27 +48,31 @@ body{
 }
 
 .h3-bold-title{
-  font-size: 1.6rem;
+  font-size: var(--h3);
   font-weight: 700;
 }
 
 .h2-bold-title{
-  font-size: 2rem;
+  font-size: var(--h2);
   font-weight: 700;
 }
 
+.h2-regular-title{
+  font-size: var(--h2);
+  font-weight: 400
+}
 .p-small-bold{
-  font-size: 1rem;
+  font-size: var(--p-small);
   font-weight: 700;
 }
 
 .p-medium-bold{
-  font-size: 1.4rem;
+  font-size: var(--p-medium);
   font-weight: 700;
 }
 
 .p-medium-regular{
-  font-size: 1.4rem;
+  font-size: var(--p-medium);
   font-weight: 400;
 }
 
@@ -204,6 +208,9 @@ body{
 .last-properties{
   margin-top: 48.5rem;
   padding: 0 2.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }  
 
 .last-properties .last-properties-title{
@@ -375,4 +382,23 @@ body{
   left: calc( 50% - 9.4rem );
   margin-top: 1.6rem;
   text-decoration: none;
+}
+
+.indexHouses{
+  display: flex;
+  margin: 0 auto;
+  margin-top: 1.8rem;
+  width: 14.6rem;
+  justify-content: space-between;
+}
+
+.indexHouses a{
+  display: block;
+  width: 3.6rem;
+  height: 3.6rem;
+  background: var(--dark-purple);
+  text-align: center;
+  display: grid;
+  place-content: center;
+  color: var(--light-gray);
 }
