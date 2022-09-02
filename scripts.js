@@ -110,7 +110,8 @@ function Home(urlImage,stateHomeText,HomeTitleText,HomeSubTitleText,PropertyName
 
 for(let i=0;i<=3;i++){
   Home(
-    Data[i].urlImage,
+    Data[i].
+    urlImage,
     Data[i].stateHomeText,
     Data[i].HomeTitleText,
     Data[i].HomeSubTitleText,
