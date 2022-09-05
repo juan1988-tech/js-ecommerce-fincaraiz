@@ -213,6 +213,7 @@ body{
 }  
 
 .last-properties .last-properties-title{
+  margin-top: .4rem;
   color: var(--dark-purple);
   text-align: center;
 }
@@ -232,6 +233,10 @@ body{
   border-radius: 1rem;
   display: grid;
   place-items: center;
+  position: absolute;
+  z-index: 1;
+  top: .6rem;
+  right: .6rem;
 }
 
 .last-properties-container .p-salesSate{
@@ -239,14 +244,49 @@ body{
   font-weight: 700;
 }
 
-.last-properties-container .principal-home-image{
-  width: 98.5%;
+
+.carousel-container{
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+.principal-home-carousel{
+  width: 300%;
+  display: flex;
+  position: relative;
+  left: 0;
+  transition-duration: .8s;
+  transition-timing-function: ease-in-out;
+}
+
+.principal-home-carousel-1{
+  width: 300%;
+  display: flex;
+  position: relative;
+  left: -100%;
+  transition-duration: .8s;
+  transition-timing-function: ease-in-out;
+}
+
+.principal-home-carousel-2{
+  width: 300%;
+  display: flex;
+  position: relative;
+  left: -200%;
+  transition-duration: .8s;
+  transition-timing-function: ease-in-out;
+}
+ .principal-home-image{
+  width: 100%;
   height: 19.3rem;
+  background-size: cover;
+  position: relative;
+  scroll-snap-align: center;
 }
 
 .last-properties-container .last-property{
   width: 100%;
-  height: 41rem;
+  height: 41rem; 
   background: var(--light-gray);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-top: 2.4rem;
@@ -288,6 +328,8 @@ body{
   left: calc(50% - 3.9rem);
   display: flex;
   justify-content: space-between;
+  z-index: 1;
+  bottom: 228px;
 }
 
 .last-properties-container .point-nabvar-home{
@@ -317,7 +359,7 @@ body{
   grid-template: repeat(3, 1fr)/4.6rem 1fr 4.6rem 1fr;
   grid-template-areas:"property-name-logo property-name-p property-name-p property-name-p"
                       "property-bedrooms-logo property-bedrooms-p property-bedrooms-p property-bedrooms-p"
-                      "property-measure-logo property-measure-p property-bathrooms-logo .";
+                       "property-measure-logo property-measure-p property-bathrooms-logo property-bathrooms-p";
 }
 
 .last-properties-container .last-property-description span{
@@ -366,6 +408,10 @@ body{
   grid-area: property-bathrooms-logo;
 }
 
+.last-properties-container .property-bathrooms-p{
+  grid-area: property-bathrooms-p;
+}
+
 .last-properties-container .button-action-cellphone{
   width: 18.8rem;
   height: 4.1rem;
@@ -381,6 +427,8 @@ body{
   left: calc( 50% - 9.4rem );
   margin-top: 1.6rem;
   text-decoration: none;
+  font-size: var(--p);
+  font-weight: bold;
 }
 
 .indexHouses{
