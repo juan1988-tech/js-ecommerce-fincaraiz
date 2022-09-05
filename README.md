@@ -4,7 +4,6 @@ e-commerce especializado en finca raíz
 ## Hola
 Este es un e-commerce ficticio, que se especializa en la venta de finca raíz, la idea de este proyecto es utilizar javascript 
 para programar las interacciones propias de esta clase de comercios. 
-
                                                      
 
 ## Descripción del protecto  

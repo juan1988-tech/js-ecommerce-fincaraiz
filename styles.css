@@ -65,10 +65,15 @@ body{
   font-weight: 700;
 }
 
+.p-small-regular{
+  font-size: var(--p-small);
+  font-weight: 400;
+}
 .p-medium-bold{
   font-size: var(--p-medium);
   font-weight: 700;
 }
+
 
 .p-medium-regular{
   font-size: var(--p-medium);
@@ -606,4 +611,52 @@ body{
 .footer-contact h1{
   text-align: center;
   font-size: var(--p);
+}
+
+.footer-contact .footer-location{
+  color: var(--medium-gray);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-location .location{
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer-location .location-direction{
+  background-image: url('./assets/icons/icon-location-footer.svg');
+  width: 1.6rem;
+  height: 1.8rem;
+}
+
+.footer-location .location-cellphone{
+  background-image: url('./assets/icons/whatsapp-icon-footer.svg');
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.footer-location .footer-location-item{
+  display: inline-flex;
+  margin: 0 auto;
+  margin-top: 2rem;
+  width: 16.7rem;
+  height: 2.4rem;
+  align-items: center;  
+  justify-content: space-around;
+}
+
+.footer-author, .footer-rights{
+  text-align: center;
+}
+
+.footer-author{
+  margin-top: 2.8rem;
+}
+
+.footer-rights{
+  margin-top: .8rem;
+  margin-bottom: .8rem;
 }
