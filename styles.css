@@ -162,6 +162,7 @@ body{
 
 .ul__list-ancle .header__email{
   background-image: url('./assets/icons/email-header.svg');
+  display: none;
 }
 
 .ul__list-ancle .header__cellphone{
