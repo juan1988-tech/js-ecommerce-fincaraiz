@@ -71,7 +71,6 @@ body{
   font-weight: 400;
 }
 
-
 /*header*/
 .header{
   background: var(--dark-purple);
@@ -180,7 +179,6 @@ body{
   background-image: url('./assets/images/background-header-cellphone.png');
   height: 29.3rem;
   background-size: cover;
-  /* padding: 2.4rem 1rem; */
   display: flex;
   flex-direction: column;
   z-index: 0; 
@@ -244,6 +242,7 @@ body{
   z-index: 1;
   top: -4.2rem;
   left: 1.8rem;
+  max-width: 41.5rem;
 }
 
 .form-contact .form-contact-form{
@@ -316,6 +315,11 @@ body{
 }
 
 /*ultimas propiedades*/
+.last-properties-container{
+  margin: 0 auto;
+  width: 100%;
+}
+
 .last-properties{
   padding: 0 2.4rem;
   display: flex;
@@ -676,8 +680,10 @@ body{
   background-image: url('./assets/icons/instagram-icon-footer.svg');
 }
 
+
 .footer-form{
   margin-top: 2.4rem;
+  max-width: 51.4rem;
 }
 
 .footer-form .footer-label-p{
@@ -766,3 +772,4 @@ body{
   margin-top: .8rem;
   margin-bottom: .8rem;
 }
+
