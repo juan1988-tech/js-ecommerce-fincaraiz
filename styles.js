@@ -4,6 +4,9 @@ function buttonBurguer(){
   let thirdLine = document.getElementById('third-line');
   secondLine.classList.toggle('second-line-moved');
   thirdLine.classList.toggle('third-line-moved');
+
+  const header = document.querySelector('.header');
+  header.classList.toggle('header-1');
 }
 
 const burguerButton = document.getElementById('hero-menu-burguer');

@@ -36,15 +36,6 @@ body{
   background: var(--light-gray);
 }
 
-.hero{
-  background-image: url('./assets/images/background-header-cellphone.png');
-  height: 29.3rem;
-  background-size: cover;
-  padding: 2.4rem 1rem;
-  display: flex;
-  flex-direction: column;
-  z-index: 0; 
-}
 
 .h3-bold-title{
   font-size: var(--h3);
@@ -80,14 +71,130 @@ body{
   font-weight: 400;
 }
 
+
+/*header*/
+.header{
+  background: var(--dark-purple);
+  color: var(--light-gray);
+  height: 57.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: var(--p);
+  font-weight: 400;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  transform: translateX(0%);
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+
+.header-1{
+  background: var(--dark-purple);
+  color: var(--light-gray);
+  height: 57.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: var(--p);
+  font-weight: 400;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  transform: translateX(100%);
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+
+.header .header__logo{
+  width: 14.5rem;
+  height: 2.4rem;
+  margin-top: 8rem;
+}
+
+.header .ul__list{
+  margin-top: 8.9rem;
+}
+
+.header .ul__list li{
+  list-style: none;
+  display: flex;
+  width: 20rem;
+  height: 2.4rem;
+  margin: 0 auto;
+}
+
+.header .ul__list li:nth-child(2), 
+.header .ul__list li:nth-child(3),
+.header .ul__list li:nth-child(4){
+  margin-top: 4rem;
+}
+
+.header .ul__list a{
+  display: inline-flex;
+  text-decoration: none;
+  color: var(--light-gray);
+}
+
+.header .ul__list span{
+  display: block;
+  width: 2.4rem;
+  height: 2.4rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.ul__list-ancle p{
+  margin-left: 1.2rem;
+}
+
+.ul__list-ancle .header__home{
+  background-image: url('./assets/icons/home-header.svg');
+}
+
+.ul__list-ancle .header__book{
+  background-image: url('./assets/icons/book-header.svg');
+}
+
+.ul__list-ancle .header__email{
+  background-image: url('./assets/icons/email-header.svg');
+}
+
+.ul__list-ancle .header__cellphone{
+  background-image: url('./assets/icons/ci_phone-header.svg');
+}
+
 /*hero*/
+
+.hero__container{
+  height: 76.8rem;
+  position: relative;
+}
+
+.hero{
+  background-image: url('./assets/images/background-header-cellphone.png');
+  height: 29.3rem;
+  background-size: cover;
+  /* padding: 2.4rem 1rem; */
+  display: flex;
+  flex-direction: column;
+  z-index: 0; 
+}
 
 .hero .hero-menu-burguer{
   width: 34px;
-  height: 34px;
+  height: 26px;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   align-items: center;
+  z-index: 2;
+  margin-top: 2.4rem;
+  margin-left: 1rem;
 }
 
 .hero-menu-burguer div{
@@ -135,7 +242,7 @@ body{
   padding: 1.2rem;
   position: relative;
   z-index: 1;
-  top: 19.2rem;
+  top: -4.2rem;
   left: 1.8rem;
 }
 
@@ -210,7 +317,6 @@ body{
 
 /*ultimas propiedades*/
 .last-properties{
-  margin-top: 48.5rem;
   padding: 0 2.4rem;
   display: flex;
   flex-direction: column;
