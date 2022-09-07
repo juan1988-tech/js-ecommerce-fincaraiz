@@ -122,3 +122,10 @@
 .footer-form{
   width: 60.4rem;
 }
+
+@media screen and ( min-width:1440px) {
+  .form-contact {
+    left: 57%;
+    top: -42rem;
+  }
+}
