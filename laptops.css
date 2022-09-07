@@ -1,0 +1,124 @@
+/*hero*/
+
+.hero .hero-menu-burguer{
+  display: none;
+}
+
+/*header*/
+
+.header{
+  left: 0;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 8.4rem;
+  padding: 0rem 2.4rem;
+  background: rgba(24,25,75,.75);
+  position: fixed;
+}
+
+.ul__list-ancle p{
+  margin: 0px;
+}
+.header .header__logo{
+  margin: 0;
+}
+
+
+.header .ul__list{
+  display: flex;
+  margin: 0;
+  justify-content: space-evenly;
+}
+
+.header .ul__list li:nth-child(2), .header .ul__list li:nth-child(3), .header .ul__list li:nth-child(4){
+  margin: 0;
+}
+
+.ul__list-ancle .header__home{
+  background-image: none;
+}
+
+.ul__list-ancle .header__book{
+  background-image: none;
+}
+
+.ul__list-ancle .header__email{
+  background-image: none;
+}
+
+.header .ul__list span{
+  width: 0;
+  height: 0;
+}
+
+.header .ul__list li{
+  text-align: center;
+  width: 14rem;
+  display: initial;
+}
+
+.header .ul__list a{
+  align-items: center;
+}
+
+/*hero*/
+.hero{
+  height: 73.4rem;
+}
+
+
+/*formulario de contacto*/
+
+.form-contact{
+  left: 73.3rem;
+  top: -42rem;
+}
+
+.form-contact-logo{
+  width: 18.1rem;
+  height: 2.9rem;
+}
+
+/*ultimas propiedades*/
+
+.last-properties .last-properties-title:first-child{
+  margin-top: 8.1rem;
+  font-size: var(--h1);
+}
+
+
+.explore-properties{
+  height: 67.7rem;
+}
+
+.explore-properties a:hover{
+  background: var(--light-gray);
+  border: 1px solid var(--dark-purple);
+  color: var(--dark-purple);
+  transition-duration: .4s;
+}
+
+/*espacio publicitario*/
+
+.advertising-section{
+  height: 67.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.advertising-section h2{
+  font-size: var(--h1-large);
+  margin-top: 17.5rem;
+}
+
+.advertising-section p{
+  align-self: flex-end;
+  font-size: var(--h1);
+}
+
+/*footer*/
+.footer-form{
+  width: 60.4rem;
+}
