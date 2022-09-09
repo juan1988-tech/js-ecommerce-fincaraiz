@@ -185,7 +185,7 @@ body{
   z-index: 0; 
 }
 
-.hero .hero-menu-burguer{
+.hero .hero-menu-burguer, .hero-menu-burguer-home{
   width: 34px;
   height: 26px;
   display: grid;
@@ -196,9 +196,17 @@ body{
   margin-left: 1rem;
 }
 
+.hero-menu-burguer-home{
+  margin: 0;
+}
 .hero-menu-burguer div{
   height: .3rem;
   background: var(--white);
+}
+
+.hero-menu-burguer-home div{
+  background: var(--light-purple-font);
+  z-index: 2;
 }
 .hero-menu-burguer .first-line{
   width: 100%;
@@ -360,7 +368,6 @@ body{
   font-weight: 700;
 }
 
-
 .carousel-container{
   width: 100%;
   overflow-x: hidden;
@@ -469,7 +476,9 @@ body{
   margin-top: .6rem;
 }
 
-.last-properties-container .last-property-description{
+.last-properties-container .last-property-description,
+.home-characteristics .last-property-description
+{
   display: grid;
   height: 9.9rem;
   grid-template: repeat(3, 1fr)/4.6rem 1fr 4.6rem 1fr;
@@ -478,7 +487,8 @@ body{
                        "property-measure-logo property-measure-p property-bathrooms-logo property-bathrooms-p";
 }
 
-.last-properties-container .last-property-description span{
+.last-properties-container .last-property-description span,
+.home-characteristics .last-property-description span{
   display: block;
   width: 2.4rem;
   height: 2.4rem;
@@ -487,44 +497,53 @@ body{
   background-repeat: no-repeat;
 }
 
-.last-properties-container p{
+.last-properties-container p,
+.home-characteristics p{
   color: var(--dark-gray-form);
   align-self: center;
 }
 
-.last-properties-container .property-name-logo{ 
+.last-properties-container .property-name-logo,
+.home-characteristics .property-name-logo{ 
   background-image: url('./assets/icons/main-home-city.svg');
   grid-area: property-name-logo;
 }
 
-.last-properties-container .property-name-p{
+.last-properties-container .property-name-p,
+.home-characteristics .property-name-p{
   grid-area: property-name-p;
 }
 
-.last-properties-container .property-bedrooms-logo{
+.last-properties-container .property-bedrooms-logo,
+.home-characteristics .property-bedrooms-logo{
   background-image: url('./assets/icons/main-property-bedrooms.svg');
   grid-area: property-bedrooms-logo;
 }
 
-.last-properties-container .property-bedrooms-p{
+.last-properties-container .property-bedrooms-p,
+.home-characteristics .property-bedrooms-p{
   grid-area: property-bedrooms-p;
 }
 
-.last-properties-container .property-measure-logo{
+.last-properties-container .property-measure-logo,
+.home-characteristics .property-measure-logo{
   background-image: url('./assets/icons/property-measure-logo.svg');
   grid-area: property-measure-logo;
 }
 
-.last-properties-container .property-measure-p{
+.last-properties-container .property-measure-p,
+.home-characteristics .property-measure-p{
   grid-area: property-measure-p;
 }
 
-.last-properties-container .property-bathrooms-logo{
+.last-properties-container .property-bathrooms-logo,
+.home-characteristics .property-bathrooms-logo{
   background-image: url('./assets/icons/main-bathroom.svg');
   grid-area: property-bathrooms-logo;
 }
 
-.last-properties-container .property-bathrooms-p{
+.last-properties-container .property-bathrooms-p,
+.home-characteristics .property-bathrooms-p{
   grid-area: property-bathrooms-p;
 }
 
@@ -546,6 +565,8 @@ body{
   font-size: var(--p);
   font-weight: bold;
 }
+
+/*indexacion de la casa*/
 
 .indexHouses{
   display: flex;
@@ -774,3 +795,144 @@ body{
   margin-bottom: .8rem;
 }
 
+
+/*contenedor principal de la casa*/
+
+.principal-home-container{
+  padding: 2.4rem 2.4rem 1.8rem 2.4rem;
+}
+/* navegacion contextual en home */
+
+.local-navigation{
+  display: inline-flex;
+  align-items: center;
+  margin-top: 1.3rem;
+}
+
+.local-navigation a{
+  color: var(--medium-purple);
+  text-decoration: none;;
+  font-size: var(--p-medium);
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+
+.local-navigation span{
+  display: block;
+  width: .6rem;
+  height: 1.1rem;
+  background-image: url('./assets/icons/nav-link.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 1rem;
+}
+
+/*títulos casa */
+
+.home-photos-container{
+  margin-top: 1.4rem;
+  position: relative;
+}
+
+.principal-home-container .home-title-text{
+  margin-top: .7rem;
+  color: var(--dark-purple);
+  text-align: center;
+}
+
+.principal-home-container .home-subtitle-text{
+  margin-top: .5rem;
+  color: var(--green-subtitle);
+  text-align: center;
+}
+
+.home-photos-container .right-arrow,
+.home-photos-container .left-arrow{
+  width: 4rem;
+  height: 4rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.home-photos-container .left-arrow{
+  background-image: url('./assets/icons/left-arrow-circle.svg');
+}
+
+.home-photos-container .right-arrow{
+  background-image: url('./assets/icons/right-arrow-circle.svg');
+}
+
+.home-photos-container .home-photos-delay{
+  display: grid;
+  width: 100%;
+  grid-template-rows: 18.6rem 5.8rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: .6rem;
+  grid-template-areas: "main-photo main-photo main-photo"
+                        "photo-1 photo-2 photo-3";
+}
+
+.home-photos-delay .main-photo{
+  width: 26.8rem;
+  height: 18.6rem;
+  grid-area: main-photo;
+}
+
+.home-photos-delay .photo-1,
+.home-photos-delay .photo-2,
+.home-photos-delay .photo-3{
+  width: 8.5rem;
+  height: 5.8rem;
+}
+
+.home-photos-delay .photo-1{
+  grid-area: photo-1;
+}
+
+.home-photos-delay .photo-2{
+  grid-area: photo-2;
+}
+
+.home-photos-delay .photo-3{
+  grid-area: photo-3;
+}
+
+.home-photos-container .right-arrow,
+.home-photos-container .left-arrow{
+  position: absolute;
+}
+
+.home-photos-container .right-arrow{
+  top: 7.3rem;
+  right: .6rem;
+}
+
+.home-photos-container .left-arrow{
+  top: 7.3rem;
+  left: .2rem;
+}
+.state-home-text{
+  color: var(--dark-purple);
+  margin-top: 1.4rem;
+}
+
+.property-price{
+  color: var(--green-subtitle);
+  margin-top: .5rem;
+}
+
+.home-characteristics{
+  margin-top: 1rem;
+}
+
+.home-characteristics h1{
+  text-align: center;
+  color: var(--dark-purple);
+}
+
+.property-long-description h1{
+  text-align: center;
+  color: var(--dark-purple);
+}

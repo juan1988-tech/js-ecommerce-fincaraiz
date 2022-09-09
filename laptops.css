@@ -1,6 +1,6 @@
 /*hero*/
 
-.hero .hero-menu-burguer{
+.hero .hero-menu-burguer, .hero-menu-burguer-home{
   display: none;
 }
 
@@ -16,6 +16,10 @@
   position: fixed;
 }
 
+
+.header-home{
+  background: rgba(24,25,75,1);
+}
 .ul__list-ancle p{
   margin: 0px;
 }
