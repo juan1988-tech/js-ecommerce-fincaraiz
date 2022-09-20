@@ -922,6 +922,7 @@ body{
   color: var(--green-subtitle);
   margin-top: .5rem;
 }
+/*características de la casa*/
 
 .home-characteristics{
   margin-top: 1rem;
@@ -932,7 +933,61 @@ body{
   color: var(--dark-purple);
 }
 
-.property-long-description h1{
+/*características de la casa y ubicación de la casa*/
+
+.property-long-description h1, .property__location h1{
   text-align: center;
   color: var(--dark-purple);
+  font-size: var(--p);  
 }
+
+.property-long-description h1{
+  margin-top: 2.3rem;
+}
+
+.property__location h1{
+  margin-top: 1.8rem;
+} 
+
+.property-long-description h1 + p,.property-long-description h1 + p + p{
+  font-size: var(--p-medium);
+  margin-top: 1rem;
+  color: var(--dark-gray-form);
+  font-weight: 400;
+  line-height: 1.7rem;
+}
+
+
+.property__location .property__location-description{
+  display: flex;
+  color: var(--green-subtitle);
+  font-size: var(--p-medium);
+  margin: 0 auto;
+  margin-top: 1.2rem;
+  width: 16.3rem;
+  justify-content: space-between;
+}
+.property__location-description .green-icon-location{
+  display: block;
+  width: 1.4rem;
+  height: 1.6rem;
+  background-image: url('./assets/icons/green-icon-location.svg');
+  background-repeat: none;
+  background-position: center;
+}
+
+.property__location .google-maps-location{
+  width: 100%;
+  height: 18.6rem;
+  margin-top: 2.3rem;
+}
+
+/*video*/
+
+.property-video h1{
+  font-size: var(--p);
+  text-align: center;
+  color: var(--dark-purple);
+  margin-top: 1.5rem;
+}
+
