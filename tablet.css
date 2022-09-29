@@ -102,6 +102,13 @@
   line-height: 2.8rem;
 }
 
+/*seccion principal*/
+
+.main-sections-container{
+  margin: 0 auto;
+  width: 70%;
+}
+
 /*footer*/
 
 .footer .logo-container{
@@ -156,4 +163,101 @@
 
 .footer-author,.footer-rights{
   font-size: var(--p-medium);
+}
+
+/*títulos casa */
+
+.principal-home-container .home-title-text{
+  font-size: var(--h1);
+}
+
+.principal-home-container .home-subtitle-text{
+  font-size: var(--h2);
+}
+
+/*grilla de las imagenes casa*/
+
+.home-photos-container .home-photos-delay{
+  grid-template-rows: 37.1rem 12.7rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.home-photos-delay .photo-1, .home-photos-delay .photo-2, .home-photos-delay .photo-3{
+  height: 100%;
+}
+
+.home-photos-container .right-arrow{
+  top: 17.3rem;
+}
+
+.home-photos-container .left-arrow{
+  top: 17.3rem;
+}
+
+.state-home-text{
+  font-size: var(--p);
+}
+
+.property-price{
+  font-size: var(--h1);
+}
+
+/*características de la casa*/
+
+.home-characteristics h1{
+  font-size: var(--h1);
+}
+
+.last-properties-container p, .home-characteristics p{
+  font-size: var(--p);
+}
+
+/*características de la casa y ubicación de la casa*/
+
+.property-long-description h1{
+  font-size: var(--h1);
+}
+
+.property-long-description h1 + p,
+.property-long-description h1 + p + p{
+  font-size: var(--p);
+}
+
+.property__location h1{
+  font-size: var(--h1);
+}
+
+.property__location .property__location-description{
+  font-size: var(--p);
+  width: 18.8rems;
+}
+
+.property__location .google-maps-location{
+  width: 36.8rem;
+  height: 23.6rem;
+  position: relative;
+  left: calc( 50% - 18.4rem );
+}
+
+/*video*/
+
+.property-video h1{
+  font-size: var(--h1);
+}
+
+.property-video .house-video{
+  width: 36.8rem;
+  height: 23.6rem;
+  position: relative;
+  left: calc( 50% - 18.4rem );
+}
+
+/*botones de contacto*/
+
+.buttons-contact{
+  display: flex;
+}
+
+.buttons-contact article{
+  width: 24.2rem;
 }
