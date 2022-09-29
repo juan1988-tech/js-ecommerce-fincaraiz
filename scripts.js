@@ -220,6 +220,7 @@ const casa1 = new lastProperty(0,'p-sales-state-1','home-1-image-1','home-1-imag
 const casa2 = new lastProperty(1,'p-sales-state-2','home-2-image-1','home-2-image-2','home-2-image-3','last-properties-title-2','last-properties-subtitle-2','property-name-p-2','property-bedrooms-p-2','property-measure-p-2','property-bathrooms-p-2');
 const casa3 = new lastProperty(2,'p-sales-state-3','home-3-image-1','home-3-image-2','home-3-image-3','last-properties-title-3','last-properties-subtitle-3','property-name-p-3','property-bedrooms-p-3','property-measure-p-3','property-bathrooms-p-3');
 
+/*clase en ecmascript 6 para la reproducción del video*/ 
 
-
-
+const houseVideo = document.querySelector('.house-video');
+console.log(houseVideo);

@@ -875,7 +875,7 @@ body{
 }
 
 .home-photos-delay .main-photo{
-  width: 26.8rem;
+  width: 100%;
   height: 18.6rem;
   grid-area: main-photo;
 }
@@ -883,8 +883,8 @@ body{
 .home-photos-delay .photo-1,
 .home-photos-delay .photo-2,
 .home-photos-delay .photo-3{
-  width: 8.5rem;
-  height: 5.8rem;
+  width: 100%;
+  height: 6rem;
 }
 
 .home-photos-delay .photo-1{
@@ -984,6 +984,10 @@ body{
 
 /*video*/
 
+.property-video{
+  position: relative;
+}
+
 .property-video h1{
   font-size: var(--p);
   text-align: center;
@@ -991,3 +995,53 @@ body{
   margin-top: 1.5rem;
 }
 
+.property-video .house-video{
+  width: 100%;
+  display: grid;
+  place-items: center;
+  margin-top: 1.5rem;
+}
+
+.property-video .video-button span{
+  display: block;
+  height: 4rem;
+  width: 4rem;
+  background-image: url('./assets/icons/play-circle-videol.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  position: absolute;
+  left: calc( 50% - 20px);
+  top: calc( 50% - 20px);
+}
+
+/*botones de contacto*/
+
+.buttons-contact article{
+  width: 90%;
+  background: var(--light-medium-gray);
+  border: 1px solid var(--dark-purple);
+  border-radius: 1rem;
+  color: var(--dark-purple);
+  font-weight: bold;
+  font-size: var(--p-medium);
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 1rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whatsapp-contact span{
+  display: block;
+  height: 1.6rem;
+  width: 1.6rem;
+  background-image: url('./assets/icons/whatsapp-purple.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 1.6rem;
+}
