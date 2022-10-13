@@ -1018,8 +1018,10 @@ body{
 
 /*botones de contacto*/
 
-.buttons-contact article{
+.buttons-contact article, .buttons-contact a{
+  display: block;
   width: 90%;
+  max-width: 24.2rem;
   background: var(--light-medium-gray);
   border: 1px solid var(--dark-purple);
   border-radius: 1rem;
@@ -1033,6 +1035,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
 }
 
 .whatsapp-contact span{

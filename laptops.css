@@ -235,11 +235,6 @@
   font-size: var(--h1);
 }
 
-.property-video .house-video{
-  left: 0;
-  width: 100%;
-  height: 50.2rem;
-}
 
 .buttons-contact{
   max-width: 50.9rem;
@@ -250,7 +245,6 @@
   max-width: 24.2rem;
   cursor: pointer;
 }
-
 
 .explore-properties h1{
   font-size: var(--h2);
@@ -266,4 +260,28 @@
 
 .explore-properties .explore-properties-buttons{
   width: 100%;
+}
+
+/*características de la casa y ubicación de la casa*/
+
+.property__location .google-maps-location{
+  width: 59.8rem;
+  height: 43.6rem;
+  left: calc( 50% - 299px );
+}
+
+
+/*video*/
+
+.property-video .house-video{
+  width: 59.8rem;
+  height: 36.6rem;
+  left: calc( 50% - 299px );
+}
+
+.property-video .video-button span{
+  width: 6rem;
+  height: 6rem;
+  left: calc( 50% - 30px);
+  top: calc( 50% - 30px);
 }
