@@ -1,3 +1,10 @@
+@import './styles.css';
+
+.header .ul__list a:hover{
+  color: var(--light-purple-font);
+  transition-duration: .4s;
+}
+
 /*hero*/
 
 .hero .hero-menu-burguer, .hero-menu-burguer-home{
@@ -70,7 +77,6 @@
   height: 73.4rem;
 }
 
-
 /*formulario de contacto*/
 
 .form-contact{
@@ -83,6 +89,16 @@
   height: 2.9rem;
 }
 
+.last-properties-container .last-property{
+  height: 44rem;
+  width: 37.5rem;
+}
+
+.principal-home-image{
+  height: 22.3rem;
+}
+
+
 /*ultimas propiedades*/
 
 .last-properties .last-properties-title:first-child{
@@ -90,7 +106,17 @@
   font-size: var(--h1);
 }
 
+.last-properties-container{
+  width: 100%;
+}
 
+.last-properties-container .last-property-description, .home-characteristics .last-property-description {
+  margin-top: 1.6rem;
+}
+
+.last-properties-container .button-action-cellphone{
+  margin-top: .6rem;
+}
 .explore-properties{
   height: 67.7rem;
 }
@@ -100,6 +126,11 @@
   border: 1px solid var(--dark-purple);
   color: var(--dark-purple);
   transition-duration: .4s;
+}
+
+
+.salesStateContainer p{
+  font-size: var(--p-small);
 }
 
 /*espacio publicitario*/
@@ -127,9 +158,112 @@
   width: 60.4rem;
 }
 
+.footer-form .footer__form-input{
+  margin-right: 1rem;
+}
+
 @media screen and ( min-width:1440px) {
   .form-contact {
     left: 57%;
     top: -42rem;
   }
+}
+
+/*navegacion local*/
+
+.local-navigation{
+  margin-top: 9.3rem;
+}
+
+.local-navigation a{
+  font-size: var(--p);
+}
+
+.home-photos-container .home-photos-delay{
+  grid-template-rows: 46.4rem 17.8rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: .6rem;
+}
+
+.home-photos-delay .photo-1, .home-photos-delay .photo-2, .home-photos-delay .photo-3{
+  height: 100%;
+}
+
+
+.home-photos-container .left-arrow {
+  top: 21.3rem;
+  left: 1.6rem;
+}
+
+.home-photos-container .right-arrow{
+  top: 21.3rem;
+  right: 2rem;
+}
+
+.state-home-text{
+  font-size: var(--h2);
+}
+
+.h2-regular-title{
+  font-size: var(--h1);
+}
+
+.property-long-description h1{
+  font-size: var(--h1);
+}
+
+.property-long-description h1 + p, .property-long-description h1 + p + p{
+  font-size: var(--p);
+}
+
+.last-property-description{
+  max-width: 43.6rem;
+  margin: 0 auto;
+  margin-top: 2.6rem;
+}
+
+.property-long-description h1, .property__location h1{
+  font-size: var(--h1);
+}
+
+.property__location .google-maps-location{
+  left: 0;
+  height: 50.2rem;
+}
+
+.property-video h1{
+  font-size: var(--h1);
+}
+
+.property-video .house-video{
+  left: 0;
+  width: 100%;
+  height: 50.2rem;
+}
+
+.buttons-contact{
+  max-width: 50.9rem;
+  margin: 0 auto;
+}
+
+.buttons-contact article{
+  max-width: 24.2rem;
+  cursor: pointer;
+}
+
+
+.explore-properties h1{
+  font-size: var(--h2);
+}
+
+.explore-properties h1 + p{
+  font-size: var(--p);
+}
+
+.explore-properties a{
+  width: 18.8rem;
+}
+
+.explore-properties .explore-properties-buttons{
+  width: 100%;
 }

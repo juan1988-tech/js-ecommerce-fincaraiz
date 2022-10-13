@@ -45,7 +45,8 @@
 }
 
 .last-properties-container .last-property{
-  max-width: 34.5rem;
+  width: 34.5rem;
+  max-width: 37.5rem;
 }
 
 /*acceder propiedades*/
@@ -107,6 +108,7 @@
 .main-sections-container{
   margin: 0 auto;
   width: 70%;
+  max-width: 80rem;
 }
 
 /*footer*/
