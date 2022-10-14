@@ -222,3 +222,5 @@ const casa3 = new lastProperty(2,'p-sales-state-3','home-3-image-1','home-3-imag
 
 /*clase en ecmascript 6 para la reproducción del video*/ 
 
+const video = document.getElementById('house-video');
+console.log(video);

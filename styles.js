@@ -1,16 +1,19 @@
-function buttonBurguer(){
-  const firstLine = document.getElementById('first-line');
-  let secondLine = document.getElementById('second-line');
-  let thirdLine = document.getElementById('third-line');
-  secondLine.classList.toggle('second-line-moved');
-  thirdLine.classList.toggle('third-line-moved');
+function buttonBurguer(firstLine, secondLine, thirdLine, headerNode){
+  const firstLineBurguer = document.getElementById(firstLine);
+  let secondLineBurguer = document.getElementById(secondLine);
+  let thirdLineBurguer = document.getElementById(thirdLine);
 
-  const header = document.querySelector('.header');
+  secondLineBurguer.classList.toggle('second-line-moved');
+  thirdLineBurguer.classList.toggle('third-line-moved');
+
+  const header = document.querySelector(headerNode);
   header.classList.toggle('header-1');
 }
 
-const burguerButton = document.getElementById('hero-menu-burguer');
-burguerButton.onclick = ()=> buttonBurguer();
+/*funcion menu de hamburguesa: home*/
+const burguerButtonHome = document.getElementById('hero-menu-burguer');
+burguerButtonHome.onclick = () => buttonBurguer('first-line','second-line','third-line','#header-home');
+
 
 /*funciones de scroll para los bobtones verdades de las fotos de las casas */
 function firstGreenButton(principalHome){

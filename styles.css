@@ -834,6 +834,8 @@ body{
   position: relative;
 }
 
+
+
 .principal-home-container .home-title-text{
   margin-top: .7rem;
   color: var(--dark-purple);
@@ -871,15 +873,32 @@ body{
   grid-template-rows: 18.6rem 5.8rem;
   grid-template-columns: repeat(3, 1fr);
   gap: .6rem;
-  grid-template-areas: "main-photo main-photo main-photo"
+  grid-template-areas: "carousel-photo carousel-photo carousel-photo"
                         "photo-1 photo-2 photo-3";
 }
 
-.home-photos-delay .main-photo{
+.home-photos-delay .carousel-photo-main-container{
   width: 100%;
-  height: 100%;
-  grid-area: main-photo;
+  grid-area: carousel-photo;
+  overflow: hidden;
 }
+
+.home-photos-delay .carousel-photo-container{
+  width: 400%;
+  height: 100%;
+  overflow-x: hidden;
+  display: flex;
+  overscroll-behavior-x: contain;
+  position: relative;
+  left: 0%;
+}
+    /*clase para primer foto*/
+
+.carousel-photo-container img{
+  width: 25%;
+  height: 100%;
+}
+
 
 .home-photos-delay .photo-1,
 .home-photos-delay .photo-2,
