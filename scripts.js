@@ -22,7 +22,7 @@
     urlImage2: 'url(./assets/homes/casa-2-2.jpg)',
     urlImage3: 'url(./assets/homes/casa-2-3.jpg)',
     stateHomeText: 'En Venta',
-    HomeTitleText:  ' Cañiza de la olla',
+    HomeTitleText:  'Cañiza de la olla',
     HomeSubTitleText: 'Centro, Bogotá',
     PropertyNamePText:'Cerros de la palma',
     PropertyBedroomsPText: "2 habitaciones",
