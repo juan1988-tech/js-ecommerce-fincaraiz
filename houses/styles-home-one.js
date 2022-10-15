@@ -117,3 +117,41 @@ thirdPhoto.addEventListener('click',function(){
   carouselPhotos.style.transitionTimingFunction = "linear";     
   }
 })
+
+
+/* estilos del video */
+const containerVideo = document.createElement('div');
+containerVideo.className ="container-video";
+
+const sourceVideo = document.createElement('source');
+sourceVideo.src = '../assets/video-casa-2.mp4';
+
+const video = document.createElement('video');
+video.classList.add('house-video','interface-video');
+video.appendChild(sourceVideo);
+
+/* video.addEventListener('click',function(){
+  console.log(video);
+  containerVideo.removeEventListener('click',removeVideo);
+}) */
+
+/*funcion de quitar el video dando click en pantalla negra*/
+function removeVideo(){
+  const body = document.querySelector('body');
+  body.removeChild(containerVideo);
+  body.removeChild(video);
+}
+
+containerVideo.addEventListener('click',removeVideo);
+
+function createNewVideo(){
+  const body = document.querySelector('body');
+  body.append(containerVideo,video);
+  video.play();
+}
+
+
+
+
+
+

@@ -93,16 +93,16 @@
     <!-- video -->
     <section class="property-video">
       <h1>Video</h1>
-      <video class="house-video" id="house-video">
+      <video class="house-video" id="house-video-1" onclick="createNewVideo()">
         <source src="../assets/video-casa-2.mp4" type="video/mp4">
       </video>
-      <button type="button" class="video-button">
-        <span></span>
-      </button>
+      <article type="button" class="video-button">
+        <span onclick="createNewVideo()"></span>
+      </article>
     </section>
     <section class="buttons-contact">
-      <a class="whatsapp-contact" href="https://api.whatsapp.com/send/?phone=573028630947" target="_blank">
-        <p>Contactar por WhatsApp</p>
+      <a class="whatsapp-contact" href="https://api.whatsapp.com/send/?phone=573028630947" target="_blank" >
+        <p id="whatsapp-contact">Contactar por WhatsApp</p>
         <span></span>
       </a>
       <article class="desire-contact">

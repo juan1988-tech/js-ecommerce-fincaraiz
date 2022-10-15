@@ -1015,11 +1015,17 @@ body{
   margin-top: 1.5rem;
 }
 
-.property-video .house-video{
+.property-video .house-video, .house-video{
   width: 100%;
   display: grid;
   place-items: center;
 }
+
+.house-video{
+  height: 18.6rem;
+}
+
+
 
 .property-video .video-button span{
   display: block;
@@ -1033,6 +1039,28 @@ body{
   position: absolute;
   left: calc( 50% - 20px);
   top: calc( 50% - 20px);
+}
+
+/*contenedor del video*/
+
+.container-video{
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  padding: 2.4rem 2.4rem 1.8rem 2.4rem;
+  z-index: 1;
+}
+
+.interface-video{
+  position: fixed;
+  z-index: 2;
+  top: calc( 50% - 93px );
+  left: 0;
 }
 
 /*botones de contacto*/
