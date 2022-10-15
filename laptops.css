@@ -285,3 +285,12 @@
   left: calc( 50% - 30px);
   top: calc( 50% - 30px);
 }
+
+.interface-video{
+  position: fixed;
+  width: 59.8rem;
+  height: 36.6rem;
+  left: calc( 50% - 29.9rem);
+  top: calc( 50% - 18.3rem);
+}
+

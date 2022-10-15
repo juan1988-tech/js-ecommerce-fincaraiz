@@ -247,11 +247,18 @@
   font-size: var(--h1);
 }
 
-.property-video .house-video{
+.property-video .house-video, .interface-video{
   width: 36.8rem;
   height: 23.6rem;
   position: relative;
   left: calc( 50% - 18.4rem );
+}
+.interface-video{
+  position: fixed;
+  width: 50.4rem;
+  height: 37.1rem;
+  left: calc( 50% - 25.2rem);
+  top: calc( 50% - 18.55rem);
 }
 
 /*botones de contacto*/
