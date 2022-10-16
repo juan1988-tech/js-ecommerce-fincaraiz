@@ -118,40 +118,31 @@ thirdPhoto.addEventListener('click',function(){
   }
 })
 
+/*clase de video en ecmasCript +6, empezamos con retornar el contenedor*/ 
 
-/* estilos del video */
-const containerVideo = document.createElement('div');
-containerVideo.className ="container-video";
+class thisContainerVideo{
+  constructor(){
+  }
+  createVideo(){
+    this.container = document.createElement('div');
+    this.container.className = "container-video";
 
-const sourceVideo = document.createElement('source');
-sourceVideo.src = '../assets/video-casa-2.mp4';
+    this.video = document.createElement('video');
+    this.video.classList.add('house-video','interface-video');
 
-const video = document.createElement('video');
-video.classList.add('house-video','interface-video');
-video.appendChild(sourceVideo);
+    this.sourceVideo = document.createElement('source');
+    this.sourceVideo.src = '../assets/video-casa-2.mp4';
+    this.video.appendChild(this.sourceVideo);
+    this.video.play();
 
-/* video.addEventListener('click',function(){
-  console.log(video);
-  containerVideo.removeEventListener('click',removeVideo);
-}) */
+    this.body = document.querySelector('body');
+    this.body.append(this.video,this.container);
 
-/*funcion de quitar el video dando click en pantalla negra*/
-function removeVideo(){
-  const body = document.querySelector('body');
-  body.removeChild(containerVideo);
-  body.removeChild(video);
+    this.container.onclick = () => {
+      this.body.removeChild(this.video);
+      this.body.removeChild(this.container);
+    }  
+  }
 }
 
-containerVideo.addEventListener('click',removeVideo);
-
-function createNewVideo(){
-  const body = document.querySelector('body');
-  body.append(containerVideo,video);
-  video.play();
-}
-
-
-
-
-
-
+const createTheVideo = () => new thisContainerVideo().createVideo();
