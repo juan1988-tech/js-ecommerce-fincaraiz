@@ -172,13 +172,14 @@ function lastProperty(
   propertyBedroomsP,
   propertyMeasureP,
   propertyBathroomsP,
+  stateHomeText
   ){
   this.index = index;
   
   this.salesState = salesState;
   const psalesState = document.getElementById(salesState);
   psalesState.innerHTML = Data[index].stateHomeText;
-
+  
   this.homeImageOneId = homeImageOneId;
   const homeImageOne =  document.getElementById(homeImageOneId);
   homeImageOne.style.backgroundImage = Data[index].urlImage1;
@@ -220,7 +221,49 @@ const casa1 = new lastProperty(0,'p-sales-state-1','home-1-image-1','home-1-imag
 const casa2 = new lastProperty(1,'p-sales-state-2','home-2-image-1','home-2-image-2','home-2-image-3','last-properties-title-2','last-properties-subtitle-2','property-name-p-2','property-bedrooms-p-2','property-measure-p-2','property-bathrooms-p-2');
 const casa3 = new lastProperty(2,'p-sales-state-3','home-3-image-1','home-3-image-2','home-3-image-3','last-properties-title-3','last-properties-subtitle-3','property-name-p-3','property-bedrooms-p-3','property-measure-p-3','property-bathrooms-p-3');
 
-/*clase en ecmascript 6 para la reproducción del video*/ 
+/*Formulas de anualidades para el pago de una casa*/ 
 
-const video = document.getElementById('house-video');
-console.log(video);
+function calculatePayment(ValorPresente,periodos,interesMensual){
+  /*calculo de la anualidad y convertir el numero a string*/ 
+  interesMensual =  interesMensual / 100;
+  console.log(interesMensual);
+  const cuota = Math.ceil(ValorPresente *((interesMensual * Math.pow(1+interesMensual,periodos))/(Math.pow(1+interesMensual,periodos) - 1)));
+  let cuotaString = cuota.toString();
+
+
+
+  /*convretir el número a un formato de moneda para introducirlo en el DOM*/ 
+  let stringLastPosition = cuotaString.length + 3; 
+  let stringFirstPosition = cuotaString.length;
+  const arrayResult = [];
+  let emptyText = '';
+
+  for(let i=0;stringFirstPosition>0;i++){
+    stringLastPosition = stringLastPosition - 3;
+    stringFirstPosition = stringFirstPosition - 3;  
+    const result = cuotaString.substring(stringFirstPosition,stringLastPosition);
+    arrayResult.unshift('.',result);
+  }
+
+  const completeText = emptyText.concat("",...arrayResult);
+
+  /*aplicar una expresion regular en el primer caracter para poner el signo $ */ 
+
+  const patronInicial = /^[.]/;
+  let cifraCorregida = completeText.replace(patronInicial,'$')
+  return cifraCorregida;
+}
+
+console.log(calculatePayment(2000000,4,3));
+
+
+
+
+
+
+
+
+
+
+
+
