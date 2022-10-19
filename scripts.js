@@ -230,8 +230,6 @@ function calculatePayment(ValorPresente,periodos,interesMensual){
   const cuota = Math.ceil(ValorPresente *((interesMensual * Math.pow(1+interesMensual,periodos))/(Math.pow(1+interesMensual,periodos) - 1)));
   let cuotaString = cuota.toString();
 
-
-
   /*convretir el número a un formato de moneda para introducirlo en el DOM*/ 
   let stringLastPosition = cuotaString.length + 3; 
   let stringFirstPosition = cuotaString.length;
@@ -247,14 +245,15 @@ function calculatePayment(ValorPresente,periodos,interesMensual){
 
   const completeText = emptyText.concat("",...arrayResult);
 
+  const VP = cuota *((Math.pow(1+interesMensual,periodos)-1)/(interesMensual*(Math.pow(1+interesMensual,periodos))));
   /*aplicar una expresion regular en el primer caracter para poner el signo $ */ 
 
   const patronInicial = /^[.]/;
-  let cifraCorregida = completeText.replace(patronInicial,'$')
+  let cifraCorregida = completeText.replace(patronInicial,'$');
   return cifraCorregida;
 }
 
-console.log(calculatePayment(2000000,4,3));
+console.log(calculatePayment(18000000,12,2));
 
 
 

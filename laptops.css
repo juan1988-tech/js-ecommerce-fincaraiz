@@ -45,11 +45,15 @@
   margin: 0;
 }
 
+.header .ul__list li:nth-child(2){
+  width: 20rem;
+}
+
 .ul__list-ancle .header__home{
   background-image: none;
 }
 
-.ul__list-ancle .header__book{
+.ul__list-ancle .header__calculator{
   background-image: none;
 }
 
