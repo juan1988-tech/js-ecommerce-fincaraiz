@@ -270,3 +270,9 @@
 .buttons-contact article{
   width: 24.2rem;
 }
+
+/*seccion de calculo de prestamo*/
+
+.loan-title{
+  font-size: var(--h2);
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../styles.css" />
+  <link rel="stylesheet" type="text/css" href="../tablet.css" media="(min-width: 768px)"/>
+  <link rel="stylesheet" type="text/css" href="../laptops.css" media="(min-width: 1280px)"/>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+  <title>Finca Raiz.com: Calculadora Financiera</title>
+</head>
+<body>
+<main class="principal-home-container">
+  <div class="hero-menu-burguer hero-menu-burguer-home" id="hero-menu-burguer-1">
+    <div class="first-line" id="first-line"></div>
+    <div class="second-line" id="second-line"></div>
+    <div class="third-line" id="third-line"></div>
+  </div>
+  <header class="header" id="header-home">
+    <a href="https://juan1988-tech.github.io/js-ecommerce-fincaraiz/">
+      <img class="header__logo" src="../assets/icons/icon-finca-raiz.svg"/>
+    </a>
+    <ul class="ul__list">
+      <li>
+        <a href="https://juan1988-tech.github.io/js-ecommerce-fincaraiz/" class="ul__list-ancle"><span class="header__home"></span> <p>Propiedades</p></a>
+      </li>
+      <li>
+        <a href="https://juan1988-tech.github.io/js-ecommerce-fincaraiz/" class="ul__list-ancle"><span class="header__calculator"></span> <p>Calculadora Financiera</p></a>
+      </li>
+      <li>
+        <a href="https://juan1988-tech.github.io/js-ecommerce-fincaraiz/" class="ul__list-ancle"><span class="header__email"></span> <p>Contáctanos</p></a>
+      </li>
+      <li>
+        <a href="https://juan1988-tech.github.io/js-ecommerce-fincaraiz/" class="ul__list-ancle"><span class="header__cellphone"></span> <p>(+57)3028630947</p></a>
+      </li>
+    </ul>
+  </header>
+  <!-- seccion de calculo de prestamo -->
+  <h1 class="loan-title h2-bold-title">Calculadora de préstamo</h1>
+  <section class="calculate-loan">
+
+    <h3 class="h3-bold-title">Precio Casa</h3> 
+    <input type="text" class="calculate-loan-text" value="20.000.000"/>
+    <input type="range" class="calculate-loan-range" min="1" max="1000000" value="5000000000"/>
+    <article class="calculate-loan-values">
+      <p>$ <span id="calculate-loan-min"></span></p>
+      <p>$ <span id="calculate-loan-max"></span></p>
+    </article>
+
+    <h3 class="h3-bold-title form-title">Tasa de interés</h3>
+    <input type="text" class="calculate-loan-text" value="2%"/>
+    <input type="range" class="calculate-loan-range" id="calculate-interest-rate" min="1" max="12" value="2" />
+    <article class="calculate-loan-values">
+      <p><span id="interest-loan-min"></span>%</p>
+      <p><span id="interest-loan-max"></span>%</p>
+    </article>
+
+    <h3 class="h3-bold-title form-title">Periodos</h3>
+    <input type="text" class="calculate-loan-text" value="12"/>
+    <input type="range" class="calculate-loan-range" id="calculate-periods" min="1" max="24" value="12" />
+    <article class="calculate-loan-values">
+      <p id="periods-loan-min"></p>
+      <p id="periods-loan-max"></p>
+    </article>
+  </section>
+  <!-- seccion de valor de la cuota -->
+  <section class="loan-value-information">
+    <h3 class="h3-bold-title loan-title-information">Valor cuota</h3>
+    <canvas id="myChart" width="300" height="300"></canvas>
+  </section>
+</main>
+<script src="./financial-calculator.js"></script>
+</body>
+</html>

@@ -185,7 +185,9 @@ body{
   z-index: 0; 
 }
 
-.hero .hero-menu-burguer, .hero-menu-burguer-home{
+.hero .hero-menu-burguer, 
+.hero-menu-burguer-home,
+.hero-menu-burguer{
   width: 34px;
   height: 26px;
   display: grid;
@@ -1094,4 +1096,111 @@ body{
   background-position: center;
   background-repeat: no-repeat;
   margin-left: 1.6rem;
+}
+
+/*seccion de calculo de prestamo*/
+
+.loan-title{
+  color: var(--dark-purple);
+  text-align: center;
+  margin-top: 1.2rem;
+}
+
+.calculate-loan{
+  background: var(--dark-purple);
+  padding: 2.5rem 1.3rem;
+  margin-top: 1.2rem;
+}
+
+.calculate-loan h3{
+  color: var(--light-purple);
+}
+
+.calculate-loan p{
+  font-size: var(--p-medium);
+}
+
+.calculate-loan .calculate-loan-text{
+  background: var(--purple-background-form);
+  color: var(--light-purple);
+  border: none;
+  margin-top: .8rem;
+  width: 17.4rem;
+  height: 2rem;
+  font-size: var(--p);
+}
+
+input[type="range"]{
+  width: 100%;
+  margin-top: 2rem;
+  background-color: var(--light-purple-font);
+}
+
+input[type='range']{
+  display: block;
+  width: 100%;
+  height: 1rem;
+  border-radius: .5rem;
+}
+
+input[type='range'],
+input[type='range']::-webkit-slider-runnable-track,
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  position: relative;
+}
+
+input[type='range']::-webkit-slider-runnable-track{
+  background-color: var(--light-purple-font);
+  height: 1rem;
+  border-radius: .5rem;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  background-color: var(--green-subtitle);
+  width: 2rem;
+  height: 2rem;
+  border: 3px solid var(--light-gray);
+  border-radius: 50%;
+  margin-top: -10px;
+  position: relative;
+  top: 6px;
+}
+
+.calculate-loan-values{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: var(--light-purple);
+  margin-top: .8rem;
+}
+
+.calculate-loan-values p{
+  width: auto;
+}
+
+.calculate-loan .form-title{
+  margin-top: 1.6rem;
+}
+
+.loan-value-information{
+  background: var(--dark-purple);
+  margin-top: 1.4rem;
+  height: 26.7rem;
+}
+
+.loan-title-information{
+  color: var(--light-purple);
+  text-align: center;
+  padding-top: 1.2rem;
+  position: relative;
+}
+
+/*circulo pago cuota*/
+.principal-circle{
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  background: var(--light-gray);
+  margin-top: 1rem;
 }

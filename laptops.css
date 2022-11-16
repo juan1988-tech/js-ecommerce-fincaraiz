@@ -298,3 +298,9 @@
   top: calc( 50% - 18.3rem);
 }
 
+/*seccion de calculo de prestamo*/
+
+.loan-title{
+  font-size: var(--h1);
+  margin-top: 7.7rem;
+}
